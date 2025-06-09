@@ -1,0 +1,23 @@
+{% extends 'main.html' %} {% block header %} {% load static %}
+<link rel="stylesheet" href="{% static 'styles/project/projects.css' %}" />
+<title>projects</title>
+{% endblock header %} {% block main %}
+<header>{% include "navbar.html" %}</header>
+
+<main>
+  <section class="projectContainer">
+    {% if projects %} {% for project in projects %}
+    <a href="{{project.url}}">
+      <figure>
+        <p>{{project.ProjectName}}</p>
+        <img src="{{ project.thumbnail.url }}" alt="" />
+      </figure>
+    </a>
+    {% endfor %} {% else%}
+    <h3>no projects</h3>
+    {% endif %}
+  </section>
+  {% include 'footer.html' %}
+</main>
+
+{% endblock %}

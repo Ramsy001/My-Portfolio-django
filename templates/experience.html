@@ -1,0 +1,23 @@
+{% extends 'main.html' %} {% block header %} {% load static %}
+<link
+  rel="stylesheet"
+  href="{% static 'styles\exprerience\experience.css' %}"
+/>
+<title>Experience</title>
+{% endblock header %} {% block main %}
+<header>{% include "navbar.html" %}</header>
+
+<main>
+  <section class="experience">
+    {% if Experiences %} {% for experience in Experiences %}
+    <div class="exp">
+      <h1>{{experience.Institution}}</h1>
+      <p>{{experience.Role}}</p>
+    </div>
+    {% endfor %} {% else %}
+    <h1>No Experience</h1>
+    {% endif %}
+  </section>
+</main>
+
+{% include 'footer.html' %} {% endblock %}

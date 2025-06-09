@@ -1,0 +1,20 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-block: 5rem;
+}
+
+.experience .exp {
+  color: rgb(255, 255, 255);
+  background-color: #8400ff;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.experience .exp a {
+  color: rgb(228, 209, 209);
+}
+
+.experience .exp a:hover {
+  text-decoration: underline;
+}

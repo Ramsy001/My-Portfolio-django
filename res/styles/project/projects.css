@@ -1,0 +1,24 @@
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  gap: 1rem;
+  justify-content: center;
+  padding-block: 4rem;
+}
+
+.projectContainer a figure img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.projectContainer a figure img:hover {
+  transform: scale(1.1);
+}
+
+.projectContainer a figure p {
+  margin-bottom: 0.6rem;
+}
+
+.projectContainer a {
+  color: wheat;
+}

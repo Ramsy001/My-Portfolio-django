@@ -1,0 +1,10 @@
+footer ul {
+  display: flex;
+
+  justify-content: center;
+  gap: 3rem;
+  padding-block: 1.5rem;
+}
+footer img {
+  width: 50px;
+}

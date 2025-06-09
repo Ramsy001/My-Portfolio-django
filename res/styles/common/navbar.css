@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: wheat;
+  background-color: #8400ff;
+}
+
+.navbar h1 a,
+.navbar ul li a {
+  color: wheat;
+}
+
+.navbar ul li {
+  transition: all 700 ease-in-out;
+}
+.navbar ul li:hover {
+  transform: scale(1.1);
+}
+
+.navbar h1 {
+  padding-inline: 3.1rem;
+  padding-block: 1.1rem;
+  font-size: 2rem;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-end;
+  padding-inline: 3.1rem;
+  padding-block: 1.1rem;
+  font-size: 2rem;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar ul .active a {
+  text-decoration: underline;
+}

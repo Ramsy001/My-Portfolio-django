@@ -1,0 +1,53 @@
+main figure {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 6rem;
+  padding-block: 5rem;
+}
+
+main figure img {
+  width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+main figure figcaption {
+  width: 75ch;
+}
+
+.techstack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techstack h1 {
+  text-align: center;
+}
+
+.techstack ul {
+  display: grid;
+  width: 100dvh;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.techstack ul li figure img {
+  width: 50px;
+  aspect-ratio: 1;
+  object-fit: fill;
+}
+
+.techstack ul li figure {
+  /* outline: 1px solid lime; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.techstack ul li figure figcaption {
+  width: 100%;
+}

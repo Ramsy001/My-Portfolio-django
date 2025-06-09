@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(32, 32, 95);
+  color: rgb(243, 241, 237);
+}

@@ -1,0 +1,29 @@
+{% extends 'main.html' %} {% block header %} {% load static %}
+<link rel="stylesheet" href="{% static 'styles\contact\contact.css' %}" />
+<title>Contact me</title>
+{% endblock header %} {% block main %}
+<header>{% include "navbar.html" %}</header>
+
+<main>
+  <div class="filler">
+    <h2>Stay Connected <br />With Me</h2>
+    <p>mwaleramsy@gmail.com</p>
+    {% include 'footer.html' %}
+  </div>
+  <div class="form">
+    <form action="" method="post">
+      {% csrf_token %}
+      <label for="name"> Enter name </label>
+      <input type="text" id="name" name="name" />
+      <label for="email">Enter Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="phone">Enter Phone Number</label>
+      <input type="tel" name="phone" id="phone" />
+      <label for="mes">Enter Message</label>
+      <textarea name="mes" id="mes"></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</main>
+
+{% endblock %}

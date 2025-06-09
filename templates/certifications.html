@@ -1,0 +1,27 @@
+{% extends 'main.html' %} {% block header %} {% load static %}
+<link
+  rel="stylesheet"
+  href="{% static 'styles\certifications\certifications.css' %}"
+/>
+<title>Experience</title>
+{% endblock header %} {% block main %}
+<header>{% include "navbar.html" %}</header>
+
+<main>
+  <section class="experience">
+    {% if certifications %} {% for certification in certifications %}
+    <div class="exp">
+      <h1>{{certification.name}}</h1>
+      {% if certification.file %}
+      <a href="{% url 'cert' certification.id %}">Download Certificate</a><br />
+      <a href="{{certification.file.url}}">View Certificate</a>
+      <!-- <h1>{{certification.file.url}}</h1> -->
+      {% endif%}
+    </div>
+    {% endfor %} {% else %}
+    <h1>No Certifications</h1>
+    {% endif %}
+  </section>
+</main>
+
+{% include 'footer.html' %} {% endblock %}

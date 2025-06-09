@@ -1,0 +1,37 @@
+{% extends 'main.html' %} {% block header %} {% load static %}
+<link rel="stylesheet" href="{% static 'styles/about/about.css' %}" />
+<title>About me</title>
+{% endblock header %} {% block main %}
+<header>{% include "navbar.html" %}</header>
+<main>
+  <figure>
+    <img src="{{image.image.url}}" alt="" />
+    <figcaption>
+      <h1>Hello</h1>
+      <p>
+        I bring a diverse background encompassing roles such as data management,
+        data Entry, Python and Django development
+      </p>
+      <p>
+        As a Software Developer i am dedicated to help an organisation with my
+        Skills while continuously improving my programming skills. I have a
+        strong understanding of python and deep understanding of its Concepts,
+        syntax and best practices
+      </p>
+    </figcaption>
+  </figure>
+  <section class="techstack">
+    <h1>My Techstack</h1>
+    <ul>
+      {% for stack in techstack %}
+      <li>
+        <figure>
+          <img src="{{stack.image.url}}" alt="" />
+          <figcaption>{{stack.name}}</figcaption>
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
+{% include 'footer.html' %} {% endblock main %}
