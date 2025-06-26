@@ -9,11 +9,17 @@ navbarelem.forEach((el) => {
     cont.innerText.toLowerCase()
   ) {
     el.classList.add("active");
-    console.log(cont.innerText);
   }
 
   //   console.log(window.location.href.split("/")[3]);
 });
 
-console.log();
+let menu_bar = document.querySelector(".menu-bar");
+menu_bar.addEventListener("click", () => {
+  if (navbarul.dataset.active === "true") {
+    delete navbarul.dataset.active;
+  } else {
+    navbarul.dataset.active = "true";
+  }
+});
 // console.log(window.location.href.split("/")[3]);

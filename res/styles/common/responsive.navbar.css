@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  @keyframes slide {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .navbar {
+    position: relative;
+  }
+
+  .navbar ul[data-active] {
+    transform: translateX(0%);
+    transition: all ease-in 1s;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #8400ff;
+    transform: translateX(100%);
+    transition: all ease-in 700ms 200ms;
+  }
+
+  .navbar .menu-bar {
+    display: inline-block;
+    margin-block: auto;
+    margin-inline-end: 1rem;
+  }
+
+  .navbar .menu-bar div:nth-child(2) {
+    margin-block: 3px;
+  }
+}

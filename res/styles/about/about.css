@@ -14,7 +14,7 @@ main figure img {
 }
 
 main figure figcaption {
-  width: 75ch;
+  max-width: 75ch;
 }
 
 .techstack {

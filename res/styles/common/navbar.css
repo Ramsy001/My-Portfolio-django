@@ -41,3 +41,20 @@
 .navbar ul .active a {
   text-decoration: underline;
 }
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  padding-inline: 1rem;
+  display: none;
+  /* visibility: hidden; */
+}
+
+.menu-bar div {
+  width: 40px;
+  height: 7px;
+  background-color: gray;
+  border-radius: 23px;
+}
